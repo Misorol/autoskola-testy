@@ -7191,7 +7191,7 @@
             }
         ],
         "spravne": [
-            "c"
+            "b"
         ],
         "obrazok": null
     },
@@ -7275,7 +7275,7 @@
             }
         ],
         "spravne": [
-            "b"
+            "a"
         ],
         "obrazok": null
     },
@@ -7359,7 +7359,7 @@
             }
         ],
         "spravne": [
-            "a"
+            "b"
         ],
         "obrazok": null
     },
@@ -7415,7 +7415,7 @@
             }
         ],
         "spravne": [
-            "b"
+            "a"
         ],
         "obrazok": null
     },
@@ -7555,7 +7555,7 @@
             }
         ],
         "spravne": [
-            "c"
+            "a"
         ],
         "obrazok": null
     },
