@@ -6913,7 +6913,7 @@
         "spravne": [
             "b"
         ],
-        "obrazok": null
+        "obrazok": "images/imagetachografB99.jpg"
     },
     {
         "id": "B-100",
