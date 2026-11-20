@@ -368,7 +368,7 @@
     const itemHtml = x => {
         const p = prog[x.id];
         return `<li class="qitem"><div class="qitem-head"><span class="pill pill-accent">${x.id}</span>${x.spravne.length > 1 ? '<span class="pill">Viac správnych</span>' : ''}<span class="grow"></span>${p ? `<span class="qitem-stats"><span class="pill pill-ok">${p.ok}×</span><span class="pill pill-bad">${p.bad}×</span></span>` : ''}<button type="button" class="btn-icon star" data-act="star" data-id="${x.id}" aria-pressed="${stars.has(x.id)}" aria-label="Označiť hviezdičkou">${ico('star')}</button></div>
-  <h3>${esc(x.otazka)}</h3><ol>${x.moznosti.map(o => `<li${x.spravne.includes(o.id) ? ' class="is-correct"' : ''}><span class="k">${o.id.toUpperCase()}</span><span>${esc(o.text)}</span></li>`).join('')}</ol></li>`;
+  <h3>${esc(x.otazka)}</h3>${x.obrazok ? figure(x) : ''}<ol>${x.moznosti.map(o => `<li${x.spravne.includes(o.id) ? ' class="is-correct"' : ''}><span class="k">${o.id.toUpperCase()}</span><span>${esc(o.text)}</span></li>`).join('')}</ol></li>`;
     };
     function fillBrowse() {
         const q = norm(B.q.trim());
