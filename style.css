@@ -878,7 +878,7 @@ main:focus {
 /* Karty skupín */
 .gcards {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 10px;
 }
 
@@ -1462,7 +1462,7 @@ main:focus {
 .opt {
     position: relative;
     display: grid;
-    grid-template-columns: auto 1fr auto;
+    grid-template-columns: auto minmax(0, 1fr) auto;
     gap: 14px;
     align-items: start;
     width: 100%;
@@ -1507,8 +1507,10 @@ main:focus {
 }
 
 .opt-text {
+    min-width: 0;
     padding-top: 5px;
     line-height: 1.42;
+    overflow-wrap: anywhere;
 }
 
 .opt-mark {
@@ -1998,6 +2000,11 @@ kbd {
     font-weight: 650;
 }
 
+.answer-line>div {
+    min-width: 0;
+    overflow-wrap: anywhere;
+}
+
 /* ---------- 8. ŠTATISTIKY ---------- */
 .tiles {
     display: grid;
@@ -2198,12 +2205,17 @@ kbd {
 
 .qitem li {
     display: grid;
-    grid-template-columns: 28px 1fr;
+    grid-template-columns: 28px minmax(0, 1fr);
     gap: 10px;
     align-items: start;
     padding: 7px 10px;
     border-radius: 12px;
     font-size: .96rem;
+}
+
+.qitem li span:last-child {
+    min-width: 0;
+    overflow-wrap: anywhere;
 }
 
 .qitem li .k {
