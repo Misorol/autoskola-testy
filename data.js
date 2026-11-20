@@ -8759,7 +8759,7 @@
             }
         ],
         "spravne": [
-            "c"
+            "b"
         ],
         "obrazok": null
     },
@@ -9095,7 +9095,7 @@
             }
         ],
         "spravne": [
-            "a"
+            "c"
         ],
         "obrazok": null
     },
@@ -10271,7 +10271,7 @@
             }
         ],
         "spravne": [
-            "c"
+            "d"
         ],
         "obrazok": null
     },
