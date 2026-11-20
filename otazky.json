@@ -10943,7 +10943,7 @@
             }
         ],
         "spravne": [
-            "d"
+            "b"
         ],
         "obrazok": null
     },
@@ -10971,7 +10971,7 @@
             }
         ],
         "spravne": [
-            "d"
+            "b"
         ],
         "obrazok": null
     },
@@ -11475,7 +11475,7 @@
             }
         ],
         "spravne": [
-            "d"
+            "c"
         ],
         "obrazok": null
     },
@@ -12511,7 +12511,7 @@
             }
         ],
         "spravne": [
-            "c"
+            "b"
         ],
         "obrazok": null
     },
@@ -12875,7 +12875,7 @@
             }
         ],
         "spravne": [
-            "b"
+            "c"
         ],
         "obrazok": null
     },
@@ -13267,7 +13267,7 @@
             }
         ],
         "spravne": [
-            "a"
+            "c"
         ],
         "obrazok": null
     },
