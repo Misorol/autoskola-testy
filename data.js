@@ -4083,9 +4083,9 @@
             }
         ],
         "spravne": [
-            "a"
+            "d"
         ],
-        "obrazok": null
+        "obrazok": "images/imagetachografA146.jpg"
     },
     {
         "id": "A-147",
