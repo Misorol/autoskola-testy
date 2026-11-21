@@ -6651,11 +6651,11 @@
             },
             {
                 "id": "c",
-                "text": "minimálne 11 za sebou nasledujúcich hodín"
+                "text": "minimálne 24 za sebou nasledujúcich hodín"
             },
             {
                 "id": "d",
-                "text": "minimálne 24 za sebou nasledujúcich hodín"
+                "text": "minimálne 11 za sebou nasledujúcich hodín"
             }
         ],
         "spravne": [
@@ -10539,7 +10539,7 @@
             },
             {
                 "id": "b",
-                "text": "je povinný počas ich nastupovania a vystupovania použiť osobitné zariadenie umožňujúce výstražnú funkciu smerových svietidiel"
+                "text": "je povinný počas ich vystupovania použiť osobitné zariadenie umožňujúce výstražnú funkciu smerových svietidiel"
             },
             {
                 "id": "c",
@@ -11687,7 +11687,7 @@
             },
             {
                 "id": "b",
-                "text": "jeden alebo viac hasiacich prístrojov, ktorých celková hmotnosť náplní je najmenej 12 kg"
+                "text": "jeden alebo viac hasiacich prístrojov, ktorých celková hmotnosť náplní je najmenej 10 kg"
             },
             {
                 "id": "c",
