@@ -6969,7 +6969,7 @@
         "spravne": [
             "b"
         ],
-        "obrazok": null
+        "obrazok": "images/imagetachografB101.jpg"
     },
     {
         "id": "B-102",
@@ -7389,7 +7389,7 @@
         "spravne": [
             "c"
         ],
-        "obrazok": "images/imagetachografB126.jpg"
+        "obrazok": "images/imagetachografB116.jpg"
     },
     {
         "id": "B-117",
