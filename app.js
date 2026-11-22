@@ -47,7 +47,7 @@
     // Otázky: premenná OTAZKY z data.js (alebo súbor nahraný priamo v stránke)
     const Q = Array.isArray(window.OTAZKY) ? window.OTAZKY : load('data', []);
     // Otázky, ku ktorým zatiaľ chýba obrázok. Stačí dať súbor images/<ID>.png a zobrazí sa (pozri README).
-    const MISSING = new Set(['A-146', 'B-101', 'B-115', 'B-116', 'B-126']);
+    const MISSING = new Set(['B-115']);
     const byId = {}; Q.forEach(q => { byId[q.id] = q; });
     const GROUPS = [...new Set(Q.map(q => q.skupina))].sort();
 
@@ -61,7 +61,7 @@
     let R = load('last', null);                                    // posledné výsledky
     if (T && !T.ids.every(id => byId[id])) T = null;
     const B = { q: '', g: 'all' };                                 // filter v prehľade otázok
-    let dir = 'next', tid = null;
+    let dir = 'next', tid = null, timerStartedAt = null, timerBase = 0, lastSavedElapsed = 0;
 
     const persist = () => { if (T) save('session', T); };
 
@@ -244,14 +244,28 @@
     }
 
     function startTimer() {
-        stopTimer(); tickUI();
+        stopTimer();
+        timerBase = Number.isFinite(T.el) ? T.el : 0;
+        T.el = timerBase;
+        timerStartedAt = Date.now();
+        lastSavedElapsed = timerBase;
+        tickUI();
         tid = setInterval(() => {
             if (!T) return stopTimer();
-            T.el++; if (T.el % 5 === 0) persist(); tickUI();
+            T.el = timerBase + Math.floor((Date.now() - timerStartedAt) / 1000);
+            if (T.el - lastSavedElapsed >= 5) { persist(); lastSavedElapsed = T.el; }
+            tickUI();
             if (T.timer && T.el >= T.limit) { stopTimer(); toast('Čas vypršal, test sa vyhodnotil.'); finish(); }
         }, 1000);
     }
-    const stopTimer = () => { clearInterval(tid); tid = null; };
+    const stopTimer = () => {
+        clearInterval(tid); tid = null;
+        if (T && timerStartedAt !== null) {
+            T.el = timerBase + Math.floor((Date.now() - timerStartedAt) / 1000);
+            timerStartedAt = null;
+            if (T.el > lastSavedElapsed) { persist(); lastSavedElapsed = T.el; }
+        }
+    };
     function tickUI() {
         const t = $('#t-timer'); if (!t || !T) return;
         const left = T.timer ? T.limit - T.el : null;
