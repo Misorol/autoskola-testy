@@ -10413,7 +10413,7 @@
         "spravne": [
             "a"
         ],
-        "obrazok": "images/54testCspravnaa.jpg"
+        "obrazok": null
     },
     {
         "id": "C-098",
@@ -10441,7 +10441,7 @@
         "spravne": [
             "c"
         ],
-        "obrazok": "images/46Cspravnac.jpg"
+        "obrazok": null
     },
     {
         "id": "D-001",
@@ -13465,6 +13465,6 @@
         "spravne": [
             "c"
         ],
-        "obrazok": "images/67Dspravnac.jpg"
+        "obrazok": null
     }
 ]
