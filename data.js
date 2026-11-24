@@ -11707,7 +11707,7 @@
         "id": "D-046",
         "skupina": "D",
         "cislo": 46,
-        "otazka": "Povinnou výbavou motorového vozidla kategórie M2 a M3 s počtom do 22 miest na sedenie?",
+        "otazka": "Povinnou výbavou motorového vozidla kategórie M2 a M3 s počtom do 22 miest na sedenie okrem miesta pre vodiča?",
         "moznosti": [
             {
                 "id": "a",
@@ -11735,7 +11735,7 @@
         "id": "D-047",
         "skupina": "D",
         "cislo": 47,
-        "otazka": "Povinnou výbavou motorového vozidla kategórie M2 a M3 s počtom do 22 miest na sedenie okrem miesta pre vodiča",
+        "otazka": "Povinnou výbavou motorového vozidla kategórie M2 a M3 s počtom viac ako 22 miest na sedenie okrem miesta pre vodiča",
         "moznosti": [
             {
                 "id": "a",
