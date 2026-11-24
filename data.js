@@ -8247,7 +8247,7 @@
             },
             {
                 "id": "c",
-                "text": "OÚ v sídle kraja, odbory pre cestnú dopravu a pozemné komunikácie"
+                "text": "Krajský úrad, odbor pre cestnú dopravu a pozemné komunikácie"
             },
             {
                 "id": "d",
@@ -10386,6 +10386,62 @@
             "d"
         ],
         "obrazok": null
+    },
+    {
+        "id": "C-097",
+        "skupina": "C",
+        "cislo": 97,
+        "otazka": "Ako sa stanovuje cena za konkrétnu prepravu v príležitostnej autobusovej doprave?",
+        "moznosti": [
+            {
+                "id": "a",
+                "text": "podľa dohody medzi prepravcom a dopravcom"
+            },
+            {
+                "id": "b",
+                "text": "cena je stanovená záväznou tarifou"
+            },
+            {
+                "id": "c",
+                "text": "podľa dohody medzi objednávateľom prepravy a cestujúcim v príležitostnej autobusovej doprave"
+            },
+            {
+                "id": "d",
+                "text": "ceny stanovuje okresný úrad v sídle kraja"
+            }
+        ],
+        "spravne": [
+            "a"
+        ],
+        "obrazok": "images/54testCspravnaa.jpg"
+    },
+    {
+        "id": "C-098",
+        "skupina": "C",
+        "cislo": 98,
+        "otazka": "Sadzba za výkon vozidla, ktoré okrem jazdného výkonu realizuje aj výkon na mieste (napríklad prečerpávanie kvapalín z cisterny), sa stanovuje",
+        "moznosti": [
+            {
+                "id": "a",
+                "text": "v € na hodinu za jazdný výkon a v € na kilometer za výkon na mieste"
+            },
+            {
+                "id": "b",
+                "text": "v € na kilometer za jazdný výkon a v € na tonokilometer za výkon na mieste"
+            },
+            {
+                "id": "c",
+                "text": "v € na kilometer za jazdný výkon a v € na motohodinu za výkon na mieste"
+            },
+            {
+                "id": "d",
+                "text": "v € na kilometer za jazdný výkon a v € na kilometer za výkon na mieste"
+            }
+        ],
+        "spravne": [
+            "c"
+        ],
+        "obrazok": "images/46Cspravnac.jpg"
     },
     {
         "id": "D-001",
@@ -13382,5 +13438,33 @@
             "c"
         ],
         "obrazok": null
+    },
+    {
+        "id": "D-108",
+        "skupina": "D",
+        "cislo": 108,
+        "otazka": "Komu je možné hradiť škodu zavinenú vlastným vozidlom z poistenia zodpovednosti za škodu spôsobenú prevádzkou motorového vozidla?",
+        "moznosti": [
+            {
+                "id": "a",
+                "text": "škodu na vlastnom vozidle"
+            },
+            {
+                "id": "b",
+                "text": "každému účastníkovi cestnej premávky pri vzniku dopravnej nehody"
+            },
+            {
+                "id": "c",
+                "text": "inému účastníkovi cestnej premávky, ktorý nezavinil dopravnú nehodu"
+            },
+            {
+                "id": "d",
+                "text": "škodu na vlastnom aj cudzom vozidle"
+            }
+        ],
+        "spravne": [
+            "c"
+        ],
+        "obrazok": "images/67Dspravnac.jpg"
     }
 ];
